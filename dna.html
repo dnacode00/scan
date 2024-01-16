@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            function ottieniParametroDaURL(){
+                var urlParams= new URLSearchParams(window.location.search);
+                var parametro = urlParams.get('parametro');
+                alert('Parametro ricevuto da Java: ' + parametro);
+            }
+        </script>
+    </head>
+    <body onload="ottieniParametroDaURL()">
+    </body>
+</html>
